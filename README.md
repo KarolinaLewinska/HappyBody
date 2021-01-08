@@ -1,13 +1,13 @@
 # HappyBody
-## Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
+###### Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
 ###### Autorzy: Karolina Lewińska, Justyna Gapys <br />
 ###### Grupa S22-32
 
-Nazwa aplikacji: HappyBody <br />
-Cel aplikacji: Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
-Język: Java <br />
+**Nazwa aplikacji:** HappyBody <br />
+**Cel aplikacji:** Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
+**Język:** Java <br />
 
-Opis realizacji projektu: <br />
+**Opis realizacji projektu:** <br />
 * Na początku stworzyłyśmy logo aplikacji:
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
@@ -16,11 +16,11 @@ Opis realizacji projektu: <br />
 ![manifest](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/androidManifest.PNG) <br />
 ![menu](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/menu.PNG)
 
-Interfejsy aplikacji: <br />
+**Interfejsy aplikacji:** <br />
 ![interfaces](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces.PNG) <br />
 ![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
 
-Kod aplikacji: <br />
+**Kod aplikacji:** <br />
 1.	Deklaracja zmiennych: <br />
 ![declaration](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/variablesDeclaration.PNG) <br />
 
