@@ -8,7 +8,7 @@
 **Język:** Java <br />
 
 **Opis realizacji projektu:** <br />
-* Na początku stworzyłyśmy logo aplikacji [tworzenie logo](https://www.freelogodesign.org/):
+* Na początku stworzyłyśmy [logo aplikacji](https://www.freelogodesign.org/):
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
 
