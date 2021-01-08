@@ -38,7 +38,7 @@
 - Obliczanie wskaźnika BMI (wynik zaokrąglony do 2 miejsc po przecinku) i wyświetlenie wartości.
 ![bmi](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmi.PNG) <br />
 
-- Następnie wynik BMI jest dopasowywany do odpowiedniej instrukcji warunkowej. Wyświetlany jest pasujący komunikat i animacja.
+- Następnie wynik BMI jest dopasowywany do odpowiedniej instrukcji warunkowej. Wyświetlany jest pasujący komunikat i animacja. <br />
 ![bmiCases](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmiCases.PNG) <br />
 ![bmiCases2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmiCases2.PNG) <br />
 
