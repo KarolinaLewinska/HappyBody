@@ -20,7 +20,7 @@ Interfejsy aplikacji: <br />
 ![interfaces](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces.PNG) <br />
 ![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
 
-Kod aplikacji:
+Kod aplikacji: <br />
 1.	Deklaracja zmiennych:
 ![declaration](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/variablesDeclaration.PNG) <br />
 
