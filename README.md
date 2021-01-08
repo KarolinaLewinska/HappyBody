@@ -1,7 +1,7 @@
 # HappyBody
-###### Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
-###### Autorzy: [Karolina Lewińska](https://github.com/KarolinaLewinska), [Justyna Gapys](https://github.com/justynagapys) <br />
-###### Grupa S22-32
+**Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych".** <br />
+**Autorzy:** [Karolina Lewińska](https://github.com/KarolinaLewinska), [Justyna Gapys](https://github.com/justynagapys) <br />
+**Grupa S22-32**
 
 **Nazwa aplikacji:** HappyBody <br />
 **Cel aplikacji:** Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
