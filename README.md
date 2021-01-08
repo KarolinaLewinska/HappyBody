@@ -14,6 +14,7 @@
 
 * Logo umieściłyśmy jako ikonę aplikacji w AndroidManifest.xml <br />
 ![manifest](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/androidManifest.PNG) <br />
+<br />
 ![menu](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/menu.PNG)
 
 **Interfejsy aplikacji:** <br />
