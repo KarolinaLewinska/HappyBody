@@ -21,7 +21,7 @@ Interfejsy aplikacji: <br />
 ![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
 
 Kod aplikacji: <br />
-1.	Deklaracja zmiennych:
+1.	Deklaracja zmiennych: <br />
 ![declaration](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/variablesDeclaration.PNG) <br />
 
 2.	Inicjalizacja zmiennych – pobranie wartości z elementów interfejsu poprzez ich ID:
