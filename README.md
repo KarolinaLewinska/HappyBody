@@ -1,6 +1,6 @@
 # HappyBody
 ###### Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
-###### Autorzy: @KarolinaLewinska, @justynagapys <br />
+###### Autorzy: [Karolina Lewińska](https://github.com/KarolinaLewinska), [Justyna Gapys](https://github.com/justynagapys) <br />
 ###### Grupa S22-32
 
 **Nazwa aplikacji:** HappyBody <br />
