@@ -12,4 +12,10 @@ Opis realizacji projektu: <br />
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
 
-* Logo umieściłyśmy jako ikonę aplikacji w AndroidManifest.xml
+* Logo umieściłyśmy jako ikonę aplikacji w AndroidManifest.xml <br />
+![manifest](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/androidManifest.PNG) <br />
+![menu](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/menu.PNG)
+
+Interfejsy aplikacji:
+![interfaces](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces.PNG) <br />
+![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
