@@ -8,7 +8,8 @@ Cel aplikacji: Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrze
 Język: Java <br />
 
 Opis realizacji projektu: <br />
-Na początku stworzyłyśmy logo aplikacji:
+*Na początku stworzyłyśmy logo aplikacji:
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
 
+*Logo umieściłyśmy jako ikonę aplikacji w AndroidManifest.xml
