@@ -1,6 +1,6 @@
 # HappyBody
-Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych".
-Autorzy: Karolina Lewińska, Justyna Gapys 
+Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
+Autorzy: Karolina Lewińska, Justyna Gapys <br />
 Grupa S22-32
 
 Nazwa aplikacji: HappyBody
