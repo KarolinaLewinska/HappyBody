@@ -16,6 +16,6 @@ Opis realizacji projektu: <br />
 ![manifest](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/androidManifest.PNG) <br />
 ![menu](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/menu.PNG)
 
-Interfejsy aplikacji:
+Interfejsy aplikacji: <br />
 ![interfaces](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces.PNG) <br />
 ![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
