@@ -28,20 +28,24 @@ Kod aplikacji: <br />
 ![inicialization](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/variablesInicialization.PNG) <br />
 
 3.	Po kliknięciu przycisku wywoływana jest funkcja onClick:
-- Funkcja sprawdza czy pola tekstowe są puste. Jeśli tak to wyświetlany jest komunikat o błędzie.
+- Funkcja sprawdza czy pola tekstowe są puste. Jeśli tak to wyświetlany jest komunikat o błędzie. 
+Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszym projekcie.
 ![onClickListener](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/onClickListener.PNG) <br />
 
 - Jeśli żadne z pól nie jest puste pobierane są wpisane wartości przez użytkownika i następnie są one konwertowane do odpowiednich typów na potrzeby późniejszych obliczeń.
 ![convert](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/convert.PNG) <br />
+
 - Obliczanie wskaźnika BMI (wynik zaokrąglony do 2 miejsc po przecinku) i wyświetlenie wartości.
 ![bmi](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmi.PNG) <br />
+
 - Następnie wynik BMI jest dopasowywany do odpowiedniej instrukcji warunkowej. Wyświetlany jest pasujący komunikat i animacja.
 ![bmiCases](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmiCases.PNG) <br />
 ![bmiCases2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmiCases2.PNG) <br />
+
 - W zależności od płci obliczany jest wskaźnik BMR (wynik zaokrąglony do 2 miejsc po przecinku) i wyświetlana jest jego wartość.
 ![bmr](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmr.PNG)
 
-
+- Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszym projekcie.
 
 
 
