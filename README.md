@@ -9,4 +9,5 @@ Język: Java
 
 Opis realizacji projektu:
 Na początku stworzyłyśmy logo aplikacji:
+![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
 
