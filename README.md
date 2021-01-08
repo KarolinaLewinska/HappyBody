@@ -1,7 +1,7 @@
 # HappyBody
-Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
-Autorzy: Karolina Lewińska, Justyna Gapys <br />
-Grupa S22-32
+## Projekt na zaliczenie przedmiotu "Programowanie aplikacji mobilnych". <br />
+###### Autorzy: Karolina Lewińska, Justyna Gapys <br />
+###### Grupa S22-32
 
 Nazwa aplikacji: HappyBody <br />
 Cel aplikacji: Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
@@ -28,7 +28,7 @@ Kod aplikacji: <br />
 ![inicialization](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/variablesInicialization.PNG) <br />
 
 3.	Po kliknięciu przycisku wywoływana jest funkcja onClick:
-- Funkcja sprawdza czy pola tekstowe są puste. Jeśli tak to wyświetlany jest komunikat o błędzie. 
+- Funkcja sprawdza czy pola tekstowe są puste. Jeśli tak to wyświetlany jest komunikat o błędzie. <br />
 Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszym projekcie. <br />
 ![onClickListener](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/onClickListener.PNG) <br />
 
@@ -45,7 +45,6 @@ Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszy
 - W zależności od płci obliczany jest wskaźnik BMR (wynik zaokrąglony do 2 miejsc po przecinku) i wyświetlana jest jego wartość.
 ![bmr](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/bmr.PNG)
 
-- Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszym projekcie.
 
 
 
