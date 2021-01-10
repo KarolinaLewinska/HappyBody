@@ -29,7 +29,6 @@
 
 3.	Po kliknięciu przycisku wywoływana jest funkcja onClick:
 - Funkcja sprawdza czy pola tekstowe są puste. Jeśli tak to wyświetlany jest komunikat o błędzie. <br />
-**Obsługa błędów w postaci funcji setError() jest elementem dodatkowym w naszym projekcie.** <br />
 ![onClickListener](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/onClickListener.PNG) <br />
 
 - Jeśli żadne z pól nie jest puste pobierane są wpisane wartości przez użytkownika i następnie są one konwertowane do odpowiednich typów na potrzeby późniejszych obliczeń.
