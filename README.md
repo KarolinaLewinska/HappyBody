@@ -1,6 +1,6 @@
 # Aplikacja HappyBody 
 **Autorzy:** [Karolina Lewińska](https://github.com/KarolinaLewinska), [Justyna Gapys](https://github.com/justynagapys) <br />
-**Grupa S22-32**
+**Grupa S22-32** <br />
 **Cel aplikacji:** Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
 **Język:** Java <br />
 
