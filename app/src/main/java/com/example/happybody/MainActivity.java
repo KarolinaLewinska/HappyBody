@@ -14,98 +14,54 @@ public class MainActivity extends AppCompatActivity {
     private Button countBodyMassIndexAndBasalMetabolicRate;
     private RadioButton woman, man;
     private EditText userAge, userHeight, userWeight;
-    private TextView bodyMassIndexView, BMR, infoView;
-    private ImageView red, yellow, green;
+    private TextView bodyMassIndexView, basalMetabolicRateView, infoView;
+    private ImageView redLight, yellowLight, greenLight;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        countBodyMassIndexAndBasalMetabolicRate = (Button) findViewById(R.id.count);
         woman = (RadioButton) findViewById(R.id.woman);
         man = (RadioButton) findViewById(R.id.man);
         userAge = (EditText) findViewById(R.id.age);
-        userWeight = (EditText) findViewById(R.id.weight);
         userHeight = (EditText) findViewById(R.id.height);
+        userWeight = (EditText) findViewById(R.id.weight);
         bodyMassIndexView = (TextView) findViewById(R.id.BMI);
-        infoView = (TextView) findViewById(R.id.info);
-        BMR = (TextView) findViewById(R.id.BMR);
-        countBodyMassIndexAndBasalMetabolicRate = (Button) findViewById(R.id.count);
-        red = (ImageView) findViewById(R.id.red);
-        yellow = (ImageView) findViewById(R.id.yellow);
-        green = (ImageView) findViewById(R.id.green);
+        basalMetabolicRateView = (TextView) findViewById(R.id.BMR);
+        infoView = (TextView) findViewById(R.id.infoView);
+        redLight = (ImageView) findViewById(R.id.red);
+        yellowLight = (ImageView) findViewById(R.id.yellow);
+        greenLight = (ImageView) findViewById(R.id.green);
 
         countBodyMassIndexAndBasalMetabolicRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Validator validator = new Validator();
-                validator.checkFieldsAreNotEmpty(userAge, userHeight, userWeight);
                 BodyMassIndex bodyMassIndex = new BodyMassIndex();
+                BasalMetabolicRate basalMetabolicRate = new BasalMetabolicRate();
               
                 if (validator.checkFieldsAreNotEmpty(userAge, userHeight, userWeight)) {
-                    double bodyMassIndexResult = bodyMassIndex
-                            .countBodyMassIndex(userHeight, userWeight);
+                    double bodyMassIndexResult = bodyMassIndex.countBodyMassIndex(userHeight, userWeight);
                     String bodyMassIndexResultToString = String.valueOf(bodyMassIndexResult);
                     bodyMassIndexView.setText("BMI: " + bodyMassIndexResultToString);
-                   /* bodyMassIndex.showBodyMassIndexInfoView(bodyMassIndexResult, infoView);
-                    infoView.setText();*/
 
-
-
-                   /* if (bodyMassIndex < 16) {
-                        info.setText("Jesteś wygłodzony/a!\nPilnie skontakuj się z lekarzem!");
-                        red.animate().alpha(1);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 16 && bodyMassIndex < 17) {
-                        info.setText("Jesteś wychudzony/a!\nSkontakuj się z lekarzem!");
-                        red.animate().alpha(1);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 17 && bodyMassIndex < 18.5) {
-                        info.setText("Masz niedowagę!\nZadbaj o siebie!");
-                        red.animate().alpha(0);
-                        yellow.animate().alpha(1);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 18.5 && bodyMassIndex < 25) {
-                        info.setText("Twoja waga jest prawidłowa!\nTak trzymaj!");
-                        red.animate().alpha(0);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(1);
-                    } else if (bodyMassIndex >= 25 && bodyMassIndex < 30) {
-                        info.setText("Masz nadwagę!\nZadbaj o siebie!");
-                        red.animate().alpha(0);
-                        yellow.animate().alpha(1);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 30 && bodyMassIndex < 35) {
-                        info.setText("Masz I stopień otyłości!\nSkontakuj się z lekarzem!");
-                        red.animate().alpha(1);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 35 && bodyMassIndex < 40) {
-                        info.setText("Masz II stopień otyłości!\nSkontakuj się z lekarzem!");
-                        red.animate().alpha(1);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(0);
-                    } else if (bodyMassIndex >= 40) {
-                        info.setText("Jesteś skrajnie otyły/a!\nPilnie skontakuj się z lekarzem!");
-                        red.animate().alpha(1);
-                        yellow.animate().alpha(0);
-                        green.animate().alpha(0);
-                    }
+                    String info = bodyMassIndex.showBodyMassIndexInfo(bodyMassIndexResult);
+                    infoView.setText(info);
+                    bodyMassIndex.showProperLightsAnimations(redLight, yellowLight, greenLight, bodyMassIndexResult);
 
                     if (woman.isChecked()) {
-                        double DBMR =  round(((9.99 * Dweight) + (6.25 * Dheight) - (4.92 * Dage) - 161) * 100.0) / 100.0;
-                        String SBMR = String.valueOf(DBMR);
-                        BMR.setText("BMR: " + SBMR + " kcal");
-                    } else if (man.isChecked()) {
-                        double DBMR = round(((9.99 * Dweight) + (6.25 * Dheight) - (4.92 * Dage) + 5) * 100.0) / 100.0;
-                        String SBMR = String.valueOf(DBMR);
-                        BMR.setText("BMR: " + SBMR + " kcal");
-                    }*/
+                        double basalMetabolicRateResult = basalMetabolicRate.countWomenBasalMetabolicRate(userAge, userHeight, userWeight);
+                        String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
+                        basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
+                    } else {
+                        double basalMetabolicRateResult = basalMetabolicRate.countMenBasalMetabolicRate(userAge, userHeight, userWeight);
+                        String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
+                        basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
+                    }
                 }
             }
         });
     }
-
 }
