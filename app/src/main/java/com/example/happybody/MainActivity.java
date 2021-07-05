@@ -13,18 +13,11 @@ import android.widget.TextView;
 import static java.lang.Math.round;
 
 public class MainActivity extends AppCompatActivity {
-    public RadioButton woman;
-    public RadioButton man;
-    public EditText age;
-    public EditText weight;
-    public EditText height;
-    public TextView BMI;
-    public TextView info;
-    public TextView BMR;
-    public Button count;
-    public ImageView red;
-    public ImageView yellow;
-    public ImageView green;
+    private Button count;
+    private RadioButton woman, man;
+    private EditText age, height, weight;
+    private TextView BMI, BMR, info;
+    private ImageView red, yellow, green;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
         count.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (age.getText().length() == 0) {
+                if (age.getText().length() == 0) 
                     age.setError("Podaj wiek!");
-                } if (weight.getText().length() == 0) {
+                if (weight.getText().length() == 0) 
                     weight.setError("Podaj wagę!");
-                } if (height.getText().length() == 0) {
+                if (height.getText().length() == 0) 
                     height.setError("Podaj wzrost!");
-                }
+              
                 if (age.getText().length() != 0 && weight.getText().length() != 0 && height.getText().length() != 0) {
                     String Sweight = weight.getText().toString();
                     double Dweight = Double.parseDouble(Sweight);
