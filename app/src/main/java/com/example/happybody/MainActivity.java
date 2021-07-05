@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView bodyMassIndexView, basalMetabolicRateView, infoView;
     private ImageView redLight, yellowLight, greenLight;
 
+    Validator validator = new Validator();
+    BodyMassIndex bodyMassIndex = new BodyMassIndex();
+    BasalMetabolicRate basalMetabolicRate = new BasalMetabolicRate();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +42,6 @@ public class MainActivity extends AppCompatActivity {
         countBodyMassIndexAndBasalMetabolicRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Validator validator = new Validator();
-                BodyMassIndex bodyMassIndex = new BodyMassIndex();
-                BasalMetabolicRate basalMetabolicRate = new BasalMetabolicRate();
-              
                 if (validator.checkFieldsAreNotEmpty(userAge, userHeight, userWeight)) {
                     double bodyMassIndexResult = bodyMassIndex.countBodyMassIndex(userHeight, userWeight);
                     String bodyMassIndexResultToString = String.valueOf(bodyMassIndexResult);
@@ -50,18 +50,22 @@ public class MainActivity extends AppCompatActivity {
                     String info = bodyMassIndex.showBodyMassIndexInfo(bodyMassIndexResult);
                     infoView.setText(info);
                     bodyMassIndex.showProperLightsAnimations(redLight, yellowLight, greenLight, bodyMassIndexResult);
-
-                    if (woman.isChecked()) {
-                        double basalMetabolicRateResult = basalMetabolicRate.countWomenBasalMetabolicRate(userAge, userHeight, userWeight);
-                        String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
-                        basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
-                    } else {
-                        double basalMetabolicRateResult = basalMetabolicRate.countMenBasalMetabolicRate(userAge, userHeight, userWeight);
-                        String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
-                        basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
-                    }
+                    countProperBasalMetabolicRate();
                 }
             }
         });
     }
+
+    void countProperBasalMetabolicRate() {
+        if (woman.isChecked()) {
+            double basalMetabolicRateResult = basalMetabolicRate.countWomenBasalMetabolicRate(userAge, userHeight, userWeight);
+            String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
+            basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
+        } else {
+            double basalMetabolicRateResult = basalMetabolicRate.countMenBasalMetabolicRate(userAge, userHeight, userWeight);
+            String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
+            basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
+        }
+    }
+
 }
