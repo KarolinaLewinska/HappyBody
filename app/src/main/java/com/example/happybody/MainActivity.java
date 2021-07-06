@@ -12,14 +12,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Button countBodyMassIndexAndBasalMetabolicRate;
-    private RadioButton woman, man;
+    private RadioButton woman;
     private EditText userAge, userHeight, userWeight;
     private TextView bodyMassIndexView, basalMetabolicRateView, infoView;
     private ImageView redLight, yellowLight, greenLight;
 
-    Validator validator = new Validator();
-    BodyMassIndex bodyMassIndex = new BodyMassIndex();
-    BasalMetabolicRate basalMetabolicRate = new BasalMetabolicRate();
+    private Validator validator = new Validator();
+    private BodyMassIndex bodyMassIndex = new BodyMassIndex();
+    private BasalMetabolicRate basalMetabolicRate = new BasalMetabolicRate();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         countBodyMassIndexAndBasalMetabolicRate = (Button) findViewById(R.id.count);
         woman = (RadioButton) findViewById(R.id.woman);
-        man = (RadioButton) findViewById(R.id.man);
         userAge = (EditText) findViewById(R.id.age);
         userHeight = (EditText) findViewById(R.id.height);
         userWeight = (EditText) findViewById(R.id.weight);
@@ -42,30 +41,30 @@ public class MainActivity extends AppCompatActivity {
         countBodyMassIndexAndBasalMetabolicRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validator.checkFieldsAreNotEmpty(userAge, userHeight, userWeight)) {
-                    double bodyMassIndexResult = bodyMassIndex.countBodyMassIndex(userHeight, userWeight);
-                    String bodyMassIndexResultToString = String.valueOf(bodyMassIndexResult);
-                    bodyMassIndexView.setText("BMI: " + bodyMassIndexResultToString);
+                if (validator.checkFieldsAreNotEmpty(userAge, userWeight, userHeight)) {
+                    if (validator.checkProperNumberRange(userAge, userWeight, userHeight)) {
+                        double bodyMassIndexResult = bodyMassIndex.countBodyMassIndex(userWeight, userHeight);
+                        String bodyMassIndexResultToString = String.valueOf(bodyMassIndexResult);
+                        bodyMassIndexView.setText("BMI: " + bodyMassIndexResultToString);
 
-                    String info = bodyMassIndex.showBodyMassIndexInfo(bodyMassIndexResult);
-                    infoView.setText(info);
-                    bodyMassIndex.showProperLightsAnimations(redLight, yellowLight, greenLight, bodyMassIndexResult);
-                    countProperBasalMetabolicRate();
+                        String info = bodyMassIndex.showBodyMassIndexInfo(bodyMassIndexResult);
+                        infoView.setText(info);
+                        bodyMassIndex.showProperLightsAnimations(redLight, yellowLight, greenLight, bodyMassIndexResult);
+                        countProperBasalMetabolicRate();
+                    }
                 }
             }
         });
     }
-
     void countProperBasalMetabolicRate() {
         if (woman.isChecked()) {
-            double basalMetabolicRateResult = basalMetabolicRate.countWomenBasalMetabolicRate(userAge, userHeight, userWeight);
+            double basalMetabolicRateResult = basalMetabolicRate.countWomenBasalMetabolicRate(userAge, userWeight, userHeight);
             String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
             basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
         } else {
-            double basalMetabolicRateResult = basalMetabolicRate.countMenBasalMetabolicRate(userAge, userHeight, userWeight);
+            double basalMetabolicRateResult = basalMetabolicRate.countMenBasalMetabolicRate(userAge, userWeight, userHeight);
             String basalMetabolicRateResultToString = String.valueOf(basalMetabolicRateResult);
             basalMetabolicRateView.setText("BMR: " + basalMetabolicRateResultToString + " kcal");
         }
     }
-
 }
