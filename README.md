@@ -1,10 +1,9 @@
-# Aplikacja HappyBody 
-**Autorzy:** [Karolina Lewińska](https://github.com/KarolinaLewinska), [Justyna Gapys](https://github.com/justynagapys) <br />
-**Cel aplikacji:** Aplikacja obliczająca wskaźnik BMI oraz BMR (minimalne zapotrzebowanie energetyczne). <br />
+# HappyBody App
+Application which counts BMI and BMR indicators, created in Android Studio.<br />
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
 
-**Interfejsy aplikacji:** <br />
+**Interfaces:** <br />
 ![interfaces](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces.PNG) <br />
 ![interfaces2](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/interfaces2.PNG)
 
