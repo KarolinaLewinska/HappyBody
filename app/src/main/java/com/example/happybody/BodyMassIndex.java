@@ -5,24 +5,23 @@ import android.widget.ImageView;
 import static java.lang.Math.round;
 
 class BodyMassIndex {
-
-    double countBodyMassIndex(EditText height, EditText weight) {
-        String heightToString = height.getText().toString();
+    static double countBodyMassIndex(EditText weight, EditText height) {
         String weightToString = weight.getText().toString();
+        String heightToString = height.getText().toString();
 
-        double heightToDouble = Double.parseDouble(heightToString);
         double weightToDouble = Double.parseDouble(weightToString);
+        double heightToDouble = Double.parseDouble(heightToString);
 
         double bodyMassIndexResult = round(weightToDouble / Math.pow((heightToDouble / 100), 2) * 100.0) / 100.0;
         return bodyMassIndexResult;
     }
-
-    String showBodyMassIndexInfo(double bodyMassIndex) {
+    static String showBodyMassIndexInfo(double bodyMassIndex) {
         String infoText = "";
+
         if (bodyMassIndex < 16) {
             infoText =  "Jesteś wygłodzony/a!\nPilnie skontakuj się z lekarzem!";
             return infoText;
-        } else if (bodyMassIndex >= 16 && bodyMassIndex< 17) {
+        } else if (bodyMassIndex >= 16 && bodyMassIndex < 17) {
             infoText = "Jesteś wychudzony/a!\nSkontakuj się z lekarzem!";
             return infoText;
         } else if (bodyMassIndex >= 17 && bodyMassIndex < 18.5) {
@@ -45,7 +44,7 @@ class BodyMassIndex {
             return infoText;
         }
     }
-    void showProperLightsAnimations(ImageView redLight, ImageView yellowLight, ImageView greenLight, double bodyMassIndex) {
+    static void showProperLightsAnimations(ImageView redLight, ImageView yellowLight, ImageView greenLight, double bodyMassIndex) {
         if (bodyMassIndex >= 17 && bodyMassIndex < 18.5 || bodyMassIndex >= 25 && bodyMassIndex < 30) {
             redLight.animate().alpha(0);
             yellowLight.animate().alpha(1);
