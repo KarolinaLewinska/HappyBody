@@ -19,6 +19,7 @@ class BodyMassIndex {
 
     String showBodyMassIndexInfo(double bodyMassIndex) {
         String infoText = "";
+        
         if (bodyMassIndex < 16) {
             infoText =  "Jesteś wygłodzony/a!\nPilnie skontakuj się z lekarzem!";
             return infoText;
@@ -45,6 +46,7 @@ class BodyMassIndex {
             return infoText;
         }
     }
+    
     void showProperLightsAnimations(ImageView redLight, ImageView yellowLight, ImageView greenLight, double bodyMassIndex) {
         if (bodyMassIndex >= 17 && bodyMassIndex < 18.5 || bodyMassIndex >= 25 && bodyMassIndex < 30) {
             redLight.animate().alpha(0);
