@@ -16,6 +16,7 @@ class Validator {
             height.setError("Podaj swój wzrost!");
             return false;
         }
+        
         return true;
     }
     static boolean checkProperNumberRange(EditText age, EditText weight, EditText height) {
@@ -48,6 +49,7 @@ class Validator {
             height.setError("Nieprawidłowa wartość!");
             return false;
         }
+        
         return true;
     }
 }
