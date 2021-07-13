@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    
     void countProperBasalMetabolicRate() {
         if (woman.isChecked()) {
             double basalMetabolicRateResult = BasalMetabolicRate.countWomenBasalMetabolicRate(userAge, userWeight, userHeight);
