@@ -15,6 +15,7 @@ class BodyMassIndex {
         double bodyMassIndexResult = round(weightToDouble / Math.pow((heightToDouble / 100), 2) * 100.0) / 100.0;
         return bodyMassIndexResult;
     }
+    
     static String showBodyMassIndexInfo(double bodyMassIndex) {
         String infoText = "";
 
@@ -44,6 +45,7 @@ class BodyMassIndex {
             return infoText;
         }
     }
+    
     static void showProperLightsAnimations(ImageView redLight, ImageView yellowLight, ImageView greenLight, double bodyMassIndex) {
         if (bodyMassIndex >= 17 && bodyMassIndex < 18.5 || bodyMassIndex >= 25 && bodyMassIndex < 30) {
             redLight.animate().alpha(0);
