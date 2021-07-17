@@ -18,6 +18,7 @@ class Validator {
         }
         return true;
     }
+
     static boolean checkProperNumberRange(EditText age, EditText weight, EditText height) {
         double minValue = 1;
         double maxAge = 120;

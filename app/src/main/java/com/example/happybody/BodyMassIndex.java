@@ -44,6 +44,7 @@ class BodyMassIndex {
             return infoText;
         }
     }
+
     static void showProperLightsAnimations(ImageView redLight, ImageView yellowLight, ImageView greenLight, double bodyMassIndex) {
         if (bodyMassIndex >= 17 && bodyMassIndex < 18.5 || bodyMassIndex >= 25 && bodyMassIndex < 30) {
             redLight.animate().alpha(0);
