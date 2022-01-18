@@ -1,5 +1,5 @@
 # HappyBody App
-The other co-author: [Justyna Gapys](https://github.com/justynagapys)<br/>
+The other co-author: [Justyna Gapys](https://github.com/justynagapys).<br/>
 Application which counts BMI and BMR indicators, created in Android Studio.<br />
 
 ![logo](https://github.com/KarolinaLewinska/HappyBody/blob/master/ReadmeIMG/logo.PNG)
